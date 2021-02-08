@@ -1,5 +1,5 @@
 package Pack1;
-//4. Zdefinuj klase ktora nazywa sie SimpleCalculator i posiada metody dodajace dwie liczb oraz, odejmujace dwie liczby.
+//6. Zdefinuj interfejs Animal a nastepnie stworz kilka podklas interfejsu Animal
 public class Excercise6 {
 
     public static void main(String[] args) {
@@ -8,3 +8,13 @@ public class Excercise6 {
     }
 }
 
+interface Animal {
+
+    public void animalSound();
+    public void run();
+    public void eat();
+}
+
+abstract class Tiger implements Animal {
+
+}

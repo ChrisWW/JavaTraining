@@ -6,7 +6,7 @@ package Pack1;
 //4. Zdefinuj klase ktora nazywa sie SimpleCalculator i posiada metody dodajace dwie liczb oraz, odejmujace dwie liczby.
 
 //5. Zdefinuje klase ktora nazywa sie AdvancedCalculator ktora posiada metody SimpleCalculator i dodatkowo implementuje metody mnozace dwie liczby i dzielace.
-public class Excercise3 {
+public class Excercise345 {
 
     public static void main(String[] args) {
         Integers integers = new Integers(3, 4);
