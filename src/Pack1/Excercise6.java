@@ -10,11 +10,27 @@ public class Excercise6 {
 
 interface Animal {
 
-    public void animalSound();
+    public void animalSound(String noise);
     public void run();
     public void eat();
 }
 
-abstract class Tiger implements Animal {
+class Tiger implements Animal {
 
+    @Override
+    public void animalSound(String noise) {
+        noise = "Arrrggg";
+        System.out.println(noise);
+
+    }
+
+    @Override
+    public void run() {
+
+    }
+
+    @Override
+    public void eat() {
+
+    }
 }
