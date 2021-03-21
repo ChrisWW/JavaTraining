@@ -17,15 +17,30 @@ public class Excercise345 {
 
         //Using SimpleCalculator
 
-        SimpleCalculator simpleCalculator = new SimpleCalculator(5, 6);
 
-        simpleCalculator.mathFunction();
-        System.out.println();
-        System.out.println("Other function");
 
-        AdvancedCalculator advancedCalculator = new AdvancedCalculator(240,5);
 
-        advancedCalculator.divide();
+        ///popra
+
+        System.out.println(integers.multiplyFunction());
+
+        // Simple
+
+//        SimpleCalculator simpleCalculator = new SimpleCalculator();
+//
+//        System.out.println(simpleCalculator.sumSimpleCalculator(4, 3));
+//        int result = simpleCalculator.minusSimpleCalculator(5,4);
+//        System.out.println(result);
+
+        // Advanced
+        AdvancedCalculator advancedCalculator = new AdvancedCalculator();
+
+        int result2  = advancedCalculator.sum(5, 2);
+
+        Calculator calculator2 = new AdvancedCalculator();
+
+
+
     }
 }
 
@@ -52,31 +67,64 @@ class Integers {
 
     }
 
+    int sumFunction() {
 
-}
+        return number1 + number2;
+    }
 
-class SimpleCalculator extends Integers {
+    int minusFunction() {
 
-    public SimpleCalculator(int number1, int number2){
-        super(number1, number2);
+        return number1 - number2;
+    }
 
+    int multiplyFunction() {
 
+        return number1 * number2;
+    }
+
+    String numberString() {
+
+        return "Your first number is " + number1 + " Your second number is " + number2;
     }
 
 }
 
+abstract class Calculator {
 
-class AdvancedCalculator extends SimpleCalculator {
+    int sum(int number1, int number2) {
 
-    public AdvancedCalculator(int number1, int number2) {
-        super(number1, number2);
+
+        return number1 + number2;
     }
 
-    //divide
-    int divide() {
-        int number;
-        number = number1/number2;
-        System.out.println("Your result of dividing numbers is " + number);
-        return number;
+    int minus(int number1, int number2) {
+
+        return number1 - number2;
     }
+
+    abstract void display();
+}
+
+
+
+
+class AdvancedCalculator extends Calculator {
+
+    int multiply(int number1, int number2) {
+        return number1*number2;
+    }
+
+    int divide(int number1, int number2) {
+        return number1/number2;
+    }
+
+    @Override
+    void display() {
+
+    }
+}
+
+abstract class Test {
+
+    abstract void test();
 }
