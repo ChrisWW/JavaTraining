@@ -89,8 +89,8 @@ class MediaPLayer {
     }
 
     protected void OdtwarzajJednoczesnie(String utwory1, String utwory2) {
-        boolean temp = utwory.contains(utwory1) ? true : false;
-        boolean temp2 = utwory.contains(utwory2) ? true : false;
+        boolean temp = utwory.contains(utwory1);
+        boolean temp2 = utwory.contains(utwory2);
 
         if(temp && temp2) {
             System.out.println("Odtwarzasz 2 utwory jednoczesnie " + utwory1 + " oraz " + utwory2);
