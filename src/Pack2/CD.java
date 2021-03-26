@@ -42,5 +42,4 @@ class Utwor {
             return String.join(", ", wykonawcyUtworu);
         }
     }
-
 }

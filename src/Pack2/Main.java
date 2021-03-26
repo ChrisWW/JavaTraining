@@ -9,5 +9,11 @@ public class Main {
         mediaPlayerRefactor.OdtworzNumer(1);
 
         mediaPlayerRefactor.OdtworzNumer(0);
+        System.out.println();
+        System.out.println();
+
+        mediaPlayerRefactor.OdtworzAlfabetycznie("Black Sabbath");
+
+
     }
 }
